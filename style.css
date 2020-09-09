@@ -1,3 +1,40 @@
+#serve{
+    border: solid;
+    border-radius: 15px;
+    border-color: white;
+   
+    padding: 20px;
+    font-size: larger;
+}
+
+#servetext{
+    text-align: center;
+}
+
+#skillStudy{
+    border: solid;
+    border-radius: 15px;
+    border-color: white;
+   
+    padding: 20px;
+    font-size: larger;
+}
+#sstext{
+    text-align: center;
+}
+#rps{
+    border: solid;
+    border-radius: 15px;
+    border-color: white;
+   justify-content: center;
+    padding: 20px;
+    font-size: larger;
+}
+
+#rpstext{
+    text-align: center;
+}
+
 body{
     background-color: black;
     color: white;

@@ -15,28 +15,127 @@
         </div>
     <div id = 'PersonalProjects'>
         <h1><u><strong>Personal Projects</strong> </u></h1>
+        <style>
+            * {box-sizing: border-box}
+            .mySlides1, .mySlides2 {display: none}
+            img {vertical-align: middle;}
+            
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+            }
+            
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a grey background color */
+            .prev:hover, .next:hover {
+              background-color: #f1f1f1;
+              color: black;
+            }
+            </style>
+            </head>
+            <body>
+            
     
+            <div id = 'serve'>
+            <p>SERVE:</p>
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="serveWelcome.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="serveHome.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides1">
+                <img src="serveAddMe.png" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+
+            <p id = 'servetext'>SERVE is an individual project that I am currently developing. SERVE is a platform that allows users to find and post events in their community. The added ease of finding community service events will hopefully lead to higher participation rates.</p>
+        </div>
+        <div id = 'skillStudy'>
+            <p>Skill Study:</p>
+            <div class="slideshow-container">
+              <div class="mySlides2">
+                <img src="skillStudyWelcome.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides2">
+                <img src="ssSkils.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides2">
+                <img src="ssQuiz.png" style="width:100%">
+              </div>
+              <div class="mySlides2">
+                <img src="ssRecs.png" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <p id = 'sstext'>Skill Study is a web app that three students and myself created. The platform gives students the oppurtunity to find and develop skills necesarry to pursue a chosen career path. The site features a custom quiz to assess the users knowledge and provides recommedations based on the results.</p>
+            </div>
+            <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+
     <div id = 'rps'>
-       <a href="https://mohamedasc20.github.io/RockPaperScissors/" target="_blank"><img src = 'rockpaperscissorsGame.png' width="250" id = 'rpsImg' ></a> 
         <h3>Rock Paper Scissors</h3>
         <p><i>(Click Image to play)</i></p>
-        <p>Rock Paper Scissors is a classic game that everyone knows and loves. With that, a small team and I created an online version of the game that allows the user to play against a computer. The game features an in-game scoring system.</p>
+       <a href="https://mohamedasc20.github.io/RockPaperScissors/" target="_blank"><img src = 'rockpaperscissorsGame.png' width="50%" id = 'rpsImg' ></a> 
+        
+        <p id = 'rpstext'>Rock Paper Scissors is a classic game that everyone knows and loves. With that, a small team and I created an online version of the game that allows the user to play against a computer. The game features an in-game scoring system.</p>
     </div>
-    <div id = 'pk5'>
-    <img src = 'pokemonP5.png' width = '250' id = 'pkImg'>
-    <h3>Pokemon Sounds</h3>
-    <p>Its been years since many of us have watched Pokemon. Most of us have forgotten what they look and sound like. This program allows you to reminisce by clicking on the images of various Pokemon and listen to their voices.</p>
-    </div>
-    <div id = 'ws'>
-        <img src = 'watchSite.png' width = '300' height="200" id = 'wsImg'>
-        <h3>Watch Site</h3>
-        <p>Have you ever seen the design of a website an thought you could do so much better? With the help of CSS I turned a basic structured site into a more engaging webpage.</p>
-        </div>
-    
-    </div>
+  
     <footer>
         <p class = 'footer'>2020, Mohamed Drame. All Rights Reserved. <br> Site by Mohamed Drame</p>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
