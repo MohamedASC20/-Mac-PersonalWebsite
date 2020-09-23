@@ -16,12 +16,15 @@
         </div>
         <h1>Get In Touch With Me!</h1>
         <div class="container">
-            <form class ='contact_form' action="contactform.php" method="post" >        
-              <label for="name">Name</label>
-              <input type="text" id="name" name="firstname" placeholder="Your name..">
+          <form
+          action="https://formspree.io/xnqoqgbp"
+          method="POST"
+        >
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
           
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="lastname" placeholder="Subject...">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           
               <label for="title">Title</label>
               <select id="title" name="title">
@@ -40,7 +43,7 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Type your message here..." style="height:200px"></textarea>
           
-              <input type="submit" value="Submit" id = 'submit'>
+              <input type="submit" value="Submit" id = 'submitButton'>
               <p id = 'mS'>Message Submitted!</p>
           
             </form>
